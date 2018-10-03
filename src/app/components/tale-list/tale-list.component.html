@@ -1,0 +1,9 @@
+<p>
+  tale-list works!!!
+</p>
+
+<ul>
+  <li *ngFor="let tale of taleList | async">
+    {{tale.id}}: <a href="{{tale.link}}" target="_self">{{tale.title}}</a>
+  </li>
+</ul>
