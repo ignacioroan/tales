@@ -1,12 +1,16 @@
+// @angular
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AngularMaterialModule } from './modules/angular-material/angular-material.module';
 
-import { HttpService } from './services/http.service';
+// modules
+import { ModulesModule } from './modules/modules.module';
 
+// services
+import { HttpService } from './services/http/http.service';
+
+// components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TaleListComponent } from './components/tale-list/tale-list.component';
@@ -22,7 +26,7 @@ import { TaleListComponent } from './components/tale-list/tale-list.component';
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    AngularMaterialModule
+    ModulesModule,
   ],
   providers: [
     HttpService

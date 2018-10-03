@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpService } from '../../services/http.service';
+import { HttpResources } from '../../enums/http-resources.enum';
+import { HttpService } from '../../services/http/http.service';
 
 @Component({
   selector: 'app-tale-list',
@@ -20,7 +21,13 @@ export class TaleListComponent implements OnInit {
 
   fetchTaleList() {
 
-    return this.httpService.fetch('assets/data/sample.json');
+    return this.httpService.fetch(HttpResources.TaleListUrl);
+
+  }
+
+  showInfo(tale) {
+
+    console.log(tale);
 
   }
 

@@ -1,9 +1,9 @@
-<p>
-  tale-list works!!!
-</p>
-
-<ul>
-  <li *ngFor="let tale of taleList | async">
-    {{tale.id}}: <a href="{{tale.link}}" target="_self">{{tale.title}}</a>
-  </li>
-</ul>
+<mat-nav-list>
+  <mat-list-item *ngFor="let tale of taleList | async">
+      <mat-icon mat-list-icon>book</mat-icon>
+     <a matLine href="{{tale.link}}" target="_self">{{tale.title}}</a>
+     <button mat-icon-button (click)="showInfo(tale.id)">
+        <mat-icon>info</mat-icon>
+     </button>
+  </mat-list-item>
+</mat-nav-list>
