@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { formatDate } from '@angular/common';
 import { HttpResources } from '../../enums/http-resources.enum';
 import { HttpService } from '../../services/http/http.service';
 
@@ -22,6 +23,20 @@ export class TaleListComponent implements OnInit {
   fetchTaleList() {
 
     return this.httpService.fetch(HttpResources.TaleListUrl);
+
+  }
+
+  getTaleDate(date) {
+
+    return formatDate(date, 'longDate', 'es-ES');
+
+  }
+
+  getLectureTime(words) {
+
+    const velocity = 200;
+
+    return Math.round(words/velocity);
 
   }
 

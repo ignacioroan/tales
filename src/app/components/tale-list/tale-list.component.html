@@ -1,9 +1,21 @@
-<mat-nav-list>
-  <mat-list-item *ngFor="let tale of taleList | async">
-      <mat-icon mat-list-icon>book</mat-icon>
-     <a matLine href="{{tale.link}}" target="_self">{{tale.title}}</a>
-     <button mat-icon-button (click)="showInfo(tale.id)">
-        <mat-icon>info</mat-icon>
-     </button>
-  </mat-list-item>
-</mat-nav-list>
+<div class="tale-list-item" *ngFor="let tale of taleList | async">
+
+  <div class="header">
+    <div class="title">
+      <h2 class="mat-title">{{tale.title}}</h2>
+      <p class="mat-caption">{{getTaleDate(tale.date)}}</p>
+    </div>
+    <a href="{{tale.link}}" target="_self" mat-icon-button color="primary">
+      <mat-icon aria-label="Leer">remove_red_eye</mat-icon>
+    </a>
+  </div>
+
+  <div class="content">
+    <p>{{tale.synopsis}}</p>
+    <mat-chip-list>
+      <mat-chip>{{tale.words}} palabras</mat-chip>
+      <mat-chip>{{getLectureTime(tale.words)}} minutos</mat-chip>
+    </mat-chip-list>
+  </div>
+
+</div>

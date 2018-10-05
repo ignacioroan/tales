@@ -1,25 +1,22 @@
 import { NgModule } from '@angular/core';
 import {
-  MatToolbarModule,
   MatButtonModule,
-  MatCheckboxModule,
-  MatListModule,
+  MatToolbarModule,
+  MatChipsModule,
   MatIconModule,
 } from '@angular/material';
 
 @NgModule({
   imports: [
-    MatToolbarModule,
     MatButtonModule,
-    MatCheckboxModule,
-    MatListModule,
+    MatToolbarModule,
+    MatChipsModule,
     MatIconModule,
   ],
   exports: [
-    MatToolbarModule,
     MatButtonModule,
-    MatCheckboxModule,
-    MatListModule,
+    MatToolbarModule,
+    MatChipsModule,
     MatIconModule,
   ],
   declarations: []

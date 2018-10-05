@@ -1,0 +1,18 @@
+.tale-list-item {
+  padding: 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, .12);
+}
+.tale-list-item .header {
+  display: flex;
+  align-items: center;
+}
+.tale-list-item .header .title {
+  flex: 1;
+}
+.tale-list-item .title .mat-title {
+  margin-bottom: 0;
+}
+.tale-list-item .title .mat-caption {
+  margin: 0;
+  color: rgba(0, 0, 0, .54);
+}
