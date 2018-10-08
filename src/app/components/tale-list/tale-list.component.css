@@ -23,7 +23,7 @@
   margin: 0 -24px -16px;
 }
 .tale-list-item .expansion-panel-trigger {
-  transition: transform .5s ease-out;
+  transition: transform .3s ease-out;
 }
 .tale-list-item .expansion-panel-trigger.is-open {
   transform: rotate(180deg);
