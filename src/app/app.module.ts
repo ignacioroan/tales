@@ -20,12 +20,11 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TaleListComponent } from './components/tale-list/tale-list.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    TaleListComponent
+    TaleListComponent,
   ],
   imports: [
     BrowserModule,

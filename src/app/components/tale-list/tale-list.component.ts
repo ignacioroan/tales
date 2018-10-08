@@ -40,12 +40,6 @@ export class TaleListComponent implements OnInit {
 
   }
 
-  showInfo(tale) {
-
-    console.log(tale);
-
-  }
-
   ngOnInit() {
   }
 
