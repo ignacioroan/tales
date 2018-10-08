@@ -1,0 +1,25 @@
+<mat-accordion multi="true">
+
+  <div class="tale-list-item" *ngFor="let tale of taleList | async; index as i">
+
+    <div class="header">
+      <div class="title">
+        <h2 class="mat-title"><a href="{{tale.link}}" color="primary">{{tale.title}}</a></h2>
+        <p class="mat-caption">{{getTaleDate(tale.date)}}</p>
+      </div>
+      <button mat-icon-button color="primary" class="expansion-panel-trigger" (click)="tale.open = !tale.open" [ngClass]="{'is-open': tale.open}">
+        <mat-icon aria-label="Mostrar detalles">keyboard_arrow_down</mat-icon>
+      </button>
+    </div>
+
+    <mat-expansion-panel class="content" [expanded]="tale.open === true">
+      <p>{{tale.synopsis}}</p>
+      <mat-chip-list>
+        <mat-chip>{{tale.words}} palabras</mat-chip>
+        <mat-chip>{{getLectureTime(tale.words)}} minutos</mat-chip>
+      </mat-chip-list>
+    </mat-expansion-panel>
+
+  </div>
+
+</mat-accordion>

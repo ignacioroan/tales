@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Confesión siniestra",
+    "link": "https://docs.google.com/document/d/12TexGYcNDTUPf6X9gnBZJxOxanKFVN2CX0VukBFbExc/",
+    "date": "2018/04/10",
+    "words": "1710",
+    "synopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "id": 2,
+    "title": "Y sin embargo, se mueve",
+    "link": "https://docs.google.com/document/d/16DsWOEcr-JqQmKeFyYQFcUMZ3nlwBxlsFHiZFnjPAKQ/",
+    "date": "2018/05/28",
+    "words": "650",
+    "synopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+  },
+  {
+    "id": 3,
+    "title": "Yo tengo el poder",
+    "link": "https://docs.google.com/document/d/176NQu1upEWXDLfkB8NrwtutLfhzw2IrU0wpeO_92VsE/",
+    "date": "2018/06/01",
+    "words": "510",
+    "synopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+  },
+  {
+    "id": 4,
+    "title": "La señorita Olga",
+    "link": "https://docs.google.com/document/d/1EJNmCQ_1kHFnoS0gK0msFr8OpKxztkaCsWHJ4TvqfZE/",
+    "date": "2018/07/15",
+    "words": "870",
+    "synopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, consectetur adipiscing elit, sed do eiusmod tempor."
+  }
+]
