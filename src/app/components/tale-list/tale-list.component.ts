@@ -6,33 +6,29 @@ import { HttpService } from '../../services/http/http.service';
 @Component({
   selector: 'app-tale-list',
   templateUrl: './tale-list.component.html',
-  styleUrls: ['./tale-list.component.css']
+  styleUrls: ['./tale-list.component.scss']
 })
 export class TaleListComponent implements OnInit {
 
-  taleList: object;
+  taleList: object
 
   constructor(
-    private httpService: HttpService,
-  ) {
+    private httpService: HttpService
+  ) {}
 
-    this.taleList = this.fetchTaleList();
+  fetchTaleList(): void {
 
-  }
-
-  fetchTaleList() {
-
-    return this.httpService.fetch(HttpResources.TaleListUrl);
+    this.httpService.fetch(HttpResources.TaleListUrl).subscribe(data => this.taleList = data);
 
   }
 
-  getTaleDate(date) {
+  getTaleDate(date): string {
 
     return formatDate(date, 'longDate', 'es-ES');
 
   }
 
-  getLectureTime(words) {
+  getLectureTime(words): number {
 
     const velocity = 200;
 
@@ -40,7 +36,10 @@ export class TaleListComponent implements OnInit {
 
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
+
+    this.fetchTaleList();
+
   }
 
 }

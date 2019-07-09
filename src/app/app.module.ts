@@ -17,20 +17,24 @@ import { HttpService } from './services/http/http.service';
 
 // components
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './components/header/header.component';
 import { TaleListComponent } from './components/tale-list/tale-list.component';
+import { TaleComponent } from './components/tale/tale.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     TaleListComponent,
+    TaleComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
     ModulesModule,
+    AppRoutingModule,
   ],
   providers: [
     HttpService
